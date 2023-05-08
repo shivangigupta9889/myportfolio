@@ -1,0 +1,283 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/b1.png'),url('../img/bg1.jpeg');
+    background-size: 50% 100%,cover;
+    background-position: right,center;
+    background-repeat: no-repeat,no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 50% 100%, 0 76%);
+    background-attachment: fixed;
+}
+.logo{
+    color: white;
+    font-size: 50px;
+    padding-left: 100px;
+}
+.logo span{
+    color: rgb(204, 90, 48);
+}
+.menu a{
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu a :hover{
+    background:  rgb(204, 90, 48);
+    transition: 0.4;
+}
+.menu{
+    padding-right: 100px;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+    color: white;
+    margin-top: 100px;
+    margin-left: 100;
+    max-width: 450px;
+
+}
+.text h1{
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.text p{
+    font-size: 25px;
+    
+}
+.c-btn{
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(204, 90, 48);
+    margin-top: 20px;
+    padding: 10px;
+}
+#about{
+    padding: 100px 50px;
+}
+.section-info{
+    font-weight: bold;
+    text-align: center;
+}
+.section-info h1{
+    font-size: 50px;
+}
+.section-info p{
+    font-size: 25px ;
+    color: rgb(203, 91, 50);
+}
+.about-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+    padding: 50px;
+
+}
+.about-right-col{
+    flex-basis: 50%;
+}
+#p-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-right-col p{
+    font-size: 20px;
+    text-align: justify;
+}
+#Skills{
+    padding: 100px 50px;
+    background: url("../img/bg2.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+.skill-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background: rgb(45,52,54);
+    padding: 50px;
+}
+.skill-left-col{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.skill-right-col{
+    flex-basis: 50%;
+}
+.skill-left-col p{
+    font-size: 25px;
+}
+progress{
+    width: 80%;
+}
+.progress-div{
+    width: 70%;
+    margin: auto;
+}
+.progress-div p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 80px;
+    text-align: justify;
+}
+#services{
+    padding: 100px 50px;
+    
+}
+.services-row{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.services-box{
+    flex-basis:25%;
+    text-align:center;
+    box-shadow: 2px 3px 5px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.services-box:hover{
+    background:  rgb(204, 90, 48);
+    color: white;
+    transition: 0.5s;
+
+}
+
+.services-box img{
+    width: 60%;
+}
+#contact {
+    padding:100px 50px;
+
+    background: linear-gradient(160deg ,rgb(204, 90, 48 )45%, white 0% );
+}
+
+.contact-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col{
+    flex-basis: 50%;
+}
+.contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col form{
+    text-align: center;
+}
+.contact-right-col form h2{
+    margin-bottom: 25px;
+}
+.contact-right-col form input{
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.contact-right-col form textarea{
+    width: 60%;
+    padding: 10px;
+}
+#footer{
+    background: rgb(204, 90, 48 );
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+@media only screen and (max-width:770px){
+    header {
+        background: url(../img/bg1.jpeg);
+        background-size: cover;
+    }
+    .menu a{display: none;}
+    .logo{
+        padding-left: 50px;
+    }
+    .text{
+        margin-left: 50px;
+    }
+    .about-left-col{
+        flex-basis: 100%;
+    }
+    .about-left-col img{
+        width: 100%;
+        padding: 50px;
+    
+    }
+    .about-right-col{
+        flex-basis: 100%;
+    }
+    skill-left-col{
+        flex-basis: 100%;
+        
+    }
+    .skill-right-col{
+        flex-basis: 100%;
+    }
+    .progress-div{
+        width: 80%;
+        margin: auto;
+    }
+    .progress-div p{
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding-left: 20px;
+        text-align: justify;
+    }
+    .services-box img{
+        width: 60%;
+        margin-top: 20px;
+    }
+    .services-box {
+        flex-basis: 100%;
+
+    }
+    .contact-left-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
